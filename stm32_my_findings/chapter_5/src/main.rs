@@ -8,11 +8,11 @@ extern crate stm32f3xx_hal;
 /// This #[entry] is the entry point of the program, the point where the program halt or begin from.
 #[entry]
 fn main() -> ! {
+    let value1 = 42;
+    let value2 = 100;
 
-    let  x = 42;
-    let  a=100;
-    //using _ in front of just means i am telling the compiler to ignore the unused warning of z.
-    let  _z= x+a;
+    //using _ in front of just means i am telling the compiler to ignore the unused warning of value3.
+    let _value3 = value1 + value2;
 
     // infinite loop; just so we don't leave this stack frame
     loop {}
