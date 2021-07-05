@@ -184,7 +184,6 @@ dependencies = [
 name = "led_blink_using_myaux"
 version = "0.1.0"
 dependencies = [
- "cortex-m 0.6.7",
  "my_auxillary",
 ]
 
@@ -212,6 +211,7 @@ dependencies = [
 name = "my_auxillary"
 version = "0.1.0"
 dependencies = [
+ "cortex-m 0.6.7",
  "cortex-m-rt",
  "panic-itm",
  "stm32f3-discovery",

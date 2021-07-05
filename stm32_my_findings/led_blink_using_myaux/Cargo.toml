@@ -7,4 +7,3 @@ edition = "2018"
 
 [dependencies]
 my_auxillary= { path = "my_auxillary" }
-cortex-m = "0.6.4"
