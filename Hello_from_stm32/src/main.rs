@@ -3,7 +3,7 @@
 
 
 use cortex_m_rt::entry;
-use cortex_m::{iprintln,peripheral::ITM};
+use cortex_m::iprintln;
 use panic_itm as _;
 use stm32f3_discovery::stm32f3xx_hal::prelude::*;
 
@@ -14,9 +14,7 @@ fn main() -> !{
     let mut itm = peripherals.ITM;
 
 
-    iprintln!(&mut itm.stim[0],"Hi there!");
-    iprintln!(&mut itm.stim[0],"What is your name");
-    iprintln!(&mut itm.stim[0],"Hi");
+    iprintln!(&mut itm.stim[0],"Hello Discovery!");
 
     loop {
 
